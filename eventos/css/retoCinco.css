@@ -1,0 +1,9 @@
+.teacher--selected {
+    font-size: 30px;
+    color: blueviolet;
+}
+
+.favorite {
+    font-size: 20px;
+    color: brown;
+}
