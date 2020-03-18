@@ -1,3 +1,5 @@
+///CORREGIR ERRORES
+
 //tomo el elemento que deso modificar del html
 const targeta = document.querySelector(".target");
 const textModificar = document.querySelector("text-ocultar");
@@ -23,5 +25,4 @@ const texto = () => {
         textModificar.textContent == "Añadir";
     }
 };
-textModificar.addEventListener("click", texto);
-// document.querySelector(".target").classList.contains("teacher--selected");
+documents.addEventListener("click", texto);
