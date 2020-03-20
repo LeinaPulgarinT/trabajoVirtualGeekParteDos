@@ -1,14 +1,16 @@
 //elemento html
-const parrafo = document.querySelector(".text");
-
+const parrafo = document.getElementById("text");
+const parrafito = document.querySelector(".hola");
+const lorem = `Lorem ipsum dolor sit amet consectetur, adipisicing elit`;
 //defino mi funcion
 const add = () => {
-    parrafo.text = parrafo + document.write("lorem ipsum");
+    parrafo.innerHTML = `<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>`;
 };
 
 //escuchando al elemento
 parrafo.addEventListener("mouseover", add);
 
-// const add = () => {
-//     parrafo.innerHTML = parrafo.innerHTML + document.write("lorem ipsum");
-// };
+// parrafo.addEventListener("mouseover", () => {
+//     remove.parrafo;
+//     parrafito.add.lorem;
+// });

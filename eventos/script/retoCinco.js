@@ -1,28 +1,22 @@
-///CORREGIR ERRORES
-
-//tomo el elemento que deso modificar del html
+//tomo los elementos de html que deseo modificar
 const targeta = document.querySelector(".target");
-const textModificar = document.querySelector("text-ocultar");
+const textModificar = document.querySelector(".text-ocultar");
+const favorite = document.querySelector(".favorite");
 
-// targeta.classList.add("teacher--selected");
-// textModificar.classList.add("favorite");
+//defino los eventos en la funcion callback
 
 const change = () => {
-    if (
-        targeta.querySelector(".target").classList.contains("teacher--selected")
-    ) {
+    //Voy a utilizar remove & add para añadir las clases y quitarlas con classList, pero si quisiera hacerlo con toggle tambien se podria, reemplazando en donde estan remove y add por toggle
+    if (textModificar.textContent == "Añadir") {
         targeta.classList.remove("teacher--selected");
+        textModificar.textContent = "Quitar";
+        favorite.classList.remove("favorite");
     } else {
         targeta.classList.add("teacher--selected");
+        textModificar.textContent = "Añadir";
+        favorite.classList.add("favorite");
     }
 };
-targeta.addEventListener("click", change);
 
-const texto = () => {
-    if (textModificar.textContent == "Añadir") {
-        textModificar.textContent == "Quitar";
-    } else {
-        textModificar.textContent == "Añadir";
-    }
-};
-documents.addEventListener("click", texto);
+//Escucho los eventos
+targeta.addEventListener("click", change);

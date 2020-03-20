@@ -1,11 +1,11 @@
-.boton {
+.button {
     padding: 10px;
     border: 2px #000 solid;
     color: #000;
     background-color: blue;
 }
 
-.boton:hover {
+.button:hover {
     background-color: aqua;
     cursor: pointer;
 }
